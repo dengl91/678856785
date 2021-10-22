@@ -19,7 +19,9 @@
 
 
     $('[data-bs-toggle]').on('click', function() {
-        window.dispatchEvent(new Event('resize'));
+        setTimeout(() => {
+            window.dispatchEvent(new Event('resize'));
+        }, 800);
         console.log('window resize triggered')
     });
 
